@@ -1,0 +1,7 @@
+﻿{
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Data Source=../db.sqlite"
+    }
+  }
+}

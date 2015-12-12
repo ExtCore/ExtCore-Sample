@@ -1,0 +1,6 @@
+.svn/
+.vs/
+artifacts/
+src/WebApplication/node_modules/
+*.xproj.user
+*.lock.json

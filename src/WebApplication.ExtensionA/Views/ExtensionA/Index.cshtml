@@ -1,0 +1,20 @@
+﻿@* Copyright © 2015 Dmitry Sikorsky. All rights reserved. *@
+@* Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information. *@
+@model IEnumerable<string>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>View from Extension A</title>
+</head>
+<body>
+  <h1>View from Extension A (added as resource)</h1>
+  <p>Installed extensions:</p>
+  <ul>
+    @foreach (var item in this.Model)
+    {
+      <li>@item</li>
+    }
+  </ul>
+</body>
+</html>
