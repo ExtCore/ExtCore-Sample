@@ -7,7 +7,12 @@
   },
   "dependencies": {
     "EntityFramework.Sqlite": "7.0.0-rc1-final",
-    "ExtCore.WebApplication": "1.0.0-alpha2",
+    "ExtCore.Data": "1.0.0-alpha3",
+    "ExtCore.Data.Abstractions": "1.0.0-alpha3",
+    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-alpha3",
+    "ExtCore.Data.Models.Abstractions": "1.0.0-alpha3",
+    "ExtCore.Infrastructure": "1.0.0-alpha3",
+    "ExtCore.WebApplication": "1.0.0-alpha3",
     "Microsoft.AspNet.Diagnostics": "1.0.0-rc1-final",
     "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
     "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
