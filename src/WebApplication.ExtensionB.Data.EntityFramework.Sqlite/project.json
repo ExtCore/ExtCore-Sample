@@ -2,8 +2,8 @@
   "authors": [ "Dmitry Sikorsky" ],
   "dependencies": {
     "EntityFramework.Sqlite": "7.0.0-rc1-final",
-    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-alpha4",
-    "ExtCore.Infrastructure": "1.0.0-alpha4",
+    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-alpha5",
+    "ExtCore.Infrastructure": "1.0.0-alpha5",
     "WebApplication.ExtensionB.Data.Abstractions": "1.0.0",
     "WebApplication.ExtensionB.Data.Models": "1.0.0"
   },

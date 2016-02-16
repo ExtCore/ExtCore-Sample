@@ -1,7 +1,7 @@
 ﻿{
   "authors": [ "Dmitry Sikorsky" ],
   "dependencies": {
-    "ExtCore.Infrastructure": "1.0.0-alpha4",
+    "ExtCore.Infrastructure": "1.0.0-alpha5",
     "Microsoft.AspNet.Mvc": "6.0.0-rc1-final"
   },
   "frameworks": {
@@ -9,6 +9,6 @@
     "dnxcore50": { }
   },
   "projectUrl": "",
-  "resource": "Views/**",
+  "resource": [ "Styles/**", "Views/**" ],
   "version": "1.0.0-*"
 }

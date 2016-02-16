@@ -6,14 +6,18 @@
 <head>
   <meta charset="utf-8" />
   <title>View from Extension B</title>
+  <link href="Styles.typography.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>View from Extension B (precompiled)</h1>
+  <h1>View from Extension B (Precompiled)</h1>
+  <p>Items from SQLite database:</p>
   <div class="items">
     @foreach (var item in this.Model.Items)
     {
       @Html.Partial("_Item", item)
     }
   </div>
+  <p class="from-resources">This line is red because of the rule in CSS-file added as resource (from Extension A).</p>
+  <p>So any extension can use resources from any other extension.</p>
 </body>
 </html>
