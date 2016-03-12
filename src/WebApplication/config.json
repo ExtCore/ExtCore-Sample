@@ -3,5 +3,8 @@
     "DefaultConnection": {
       "ConnectionString": "Data Source=../db.sqlite"
     }
+  },
+  "Extensions": {
+    "Path": "artifacts\\bin\\Extensions"
   }
 }
