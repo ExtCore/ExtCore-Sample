@@ -3,7 +3,7 @@
 
 using System.Linq;
 using ExtCore.Infrastructure;
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.ExtensionA.Controllers
 {

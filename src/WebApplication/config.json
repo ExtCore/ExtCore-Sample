@@ -1,10 +1,10 @@
 ﻿{
   "Data": {
     "DefaultConnection": {
-      "ConnectionString": "Data Source=../db.sqlite"
+      "ConnectionString": "Data Source=..\\..\\..\\db.sqlite"
     }
   },
   "Extensions": {
-    "Path": "artifacts\\bin\\Extensions"
+    "Path": "\\Extensions"
   }
 }

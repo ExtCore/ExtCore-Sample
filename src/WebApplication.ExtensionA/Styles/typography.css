@@ -1,3 +1,7 @@
 ﻿.from-resources {
   color: red;
 }
+
+.suspended {
+  text-decoration: line-through;
+}
