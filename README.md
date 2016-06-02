@@ -40,6 +40,11 @@ You can also download our [ready to use sample](http://extcore.net/files/ExtCore
 It contains everything you need to run ExtCore-based web application from Visual Studio 2015, including SQLite
 database with the test data.
 
+### Projects
+
+Please take a look at [Platformus](https://github.com/Platformus/Platformus) on GitHub. It is CMS
+built on ExtCore framework with 8 extensions and 58 projects.
+
 ## Links
 
 Sources on GitHub: https://github.com/ExtCore/ExtCore
