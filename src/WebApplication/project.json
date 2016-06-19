@@ -20,10 +20,7 @@
       "version": "1.0.0-rc2-3002702",
       "type": "platform"
     },
-    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc2-final",
-    "WebApplication.ExtensionA": "1.0.0",
-    "WebApplication.ExtensionB": "1.0.0",
-    "WebApplication.ExtensionB.Data.EntityFramework.Sqlite": "1.0.0"
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc2-final"
   },
   "frameworks": {
     "netcoreapp1.0": {
