@@ -5,9 +5,14 @@ using System.Threading.Tasks;
 
 using ExtCore.Infrastructure;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using NLog.Web;
+using NLog.Extensions.Logging;
 
 namespace WebApplication.ALogger
 {
@@ -39,13 +44,36 @@ namespace WebApplication.ALogger
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddLocalization();
+            services.AddLogging();
         }
 
-        public void Configure(IApplicationBuilder applicationBuilder)
+        public void Configure(IApplicationBuilder app)
         {
-            //loggerFactory.AddConsole();
-            //loggerFactory.AddDebug();
+            var loggerFactory = app.ApplicationServices.GetService<ILoggerFactory>();
+            var env = app.ApplicationServices.GetService<IHostingEnvironment>();
+
+            //add NLog to ASP.NET Core
+            loggerFactory.AddNLog();
+
+            //add NLog.Web
+            app.AddNLogWeb();
+            //needed for non-NETSTANDARD platforms: configure nlog.config in your project root
+            //env.ConfigureNLog("nlog.config");
+            loggerFactory.AddConsole();
+            loggerFactory.AddDebug();
+
+            var logger = loggerFactory.CreateLogger<ALogger>();
+            if (env.IsDevelopment())
+            {
+                logger.LogDebug("Dev");
+                //app.UseDeveloperExceptionPage();
+                //app.UseBrowserLink();
+            }
+            else
+            {
+                logger.LogInformation("Ops");
+                //app.UseExceptionHandler("/Home/Error");
+            }
         }
 
         public void RegisterRoutes(IRouteBuilder routeBuilder)

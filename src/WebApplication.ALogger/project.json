@@ -1,5 +1,5 @@
 ﻿{
-  "authors": [ "Dmitry Sikorsky" ],
+  "authors": [ "f7Q" ],
   "buildOptions": { "embed": [ "Styles/**", "Views/**" ] },
   "dependencies": {
     "ExtCore.Infrastructure": "1.0.0-alpha8",
