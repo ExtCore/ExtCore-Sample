@@ -6,5 +6,8 @@
   },
   "Extensions": {
     "Path": "\\Extensions"
+  },
+  "Swagger": {
+    "Path": "C:\\work\\ExtCore-Sample\\src\\ExtCore-Sample\\bin\\Debug\\netcoreapp1.0\\ExtCore-Sample.xml"
   }
 }

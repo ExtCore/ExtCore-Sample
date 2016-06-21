@@ -4,7 +4,8 @@
   ],
   "buildOptions": {
     "emitEntryPoint": true,
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "xmlDoc": true
   },
   "dependencies": {
     "ExtCore.Data": "1.0.0-alpha8",
@@ -20,7 +21,16 @@
       "version": "1.0.0-rc2-3002702",
       "type": "platform"
     },
-    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc2-final"
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc2-final",
+
+    "Microsoft.Extensions.Logging": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-rc2-final",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc2-final",
+    "NLog.Extensions.Logging": "1.0.0-rc2-final-2016-05-21",
+    "NLog.Web.AspNetCore": "4.2.3",
+
+    "Swashbuckle.SwaggerGen": "6.0.0-beta9",
+    "Swashbuckle.SwaggerUi": "6.0.0-beta9"
   },
   "frameworks": {
     "netcoreapp1.0": {
@@ -36,7 +46,8 @@
       "wwwroot",
       "Views",
       "config.json",
-      "web.config"
+      "web.config",
+      "nlog.config"
     ]
   },
   "runtimeOptions": {
