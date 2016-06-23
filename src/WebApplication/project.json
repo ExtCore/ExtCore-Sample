@@ -30,7 +30,9 @@
     "NLog.Web.AspNetCore": "4.2.3",
 
     "Swashbuckle.SwaggerGen": "6.0.0-beta9",
-    "Swashbuckle.SwaggerUi": "6.0.0-beta9"
+    "Swashbuckle.SwaggerUi": "6.0.0-beta9",
+
+    "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final"
   },
   "frameworks": {
     "netcoreapp1.0": {
