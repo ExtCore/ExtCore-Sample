@@ -32,17 +32,17 @@ namespace WebApplication.BEntityFrameworkCore
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddEntityFrameworkInMemoryDatabase();
-            services.AddDbContext<InMemoryContext>(option =>
-                option.UseInMemoryDatabase()
-            );
-            
-            /*using (var context = new InMemoryContext())
-            {
-                context.InMemorys.AddRange(new InMemory { Id = 1, Name = "Gobo" }, new InMemory { Id = 2, Name = "Monkey" }, new InMemory { Id = 3, Name = "Red" }, new InMemory { Id = 4, Name = "Wembley" }, new InMemory { Id = 5, Name = "Boober" }, new InMemory { Id = 6, Name = "Uncle Traveling Matt" });
+            services
+                .AddEntityFrameworkInMemoryDatabase()
+                .AddDbContext<InMemoryContext>(option =>
+                    option.UseInMemoryDatabase()
+                );
 
-                context.SaveChangesAsync();
-            }*/
+            services
+                .AddEntityFrameworkSqlite()
+                .AddDbContext<SqliteContext>(option =>
+                    option.UseSqlite(this.configurationRoot["Data:DefaultConnection:ConnectionString"])
+                );
         }
 
         public void Configure(IApplicationBuilder app)
