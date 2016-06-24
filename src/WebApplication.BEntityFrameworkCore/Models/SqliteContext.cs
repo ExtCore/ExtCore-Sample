@@ -12,7 +12,7 @@ namespace WebApplication.BEntityFrameworkCore.Models
         /// 
         /// </summary>
         /// <param name="options"></param>
-	    public SqliteContext(DbContextOptions<SqliteContext> options) : base(options)
+	public SqliteContext(DbContextOptions<SqliteContext> options) : base(options)
         {
         }
         /// <summary>
