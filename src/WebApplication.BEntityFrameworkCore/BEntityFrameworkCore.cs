@@ -54,8 +54,6 @@ namespace WebApplication.BEntityFrameworkCore
             routeBuilder.MapRoute(
                 name: "BEntityFrameworkCore",
                 template: "{controller=Home}/{action=Index}/{id?}");
-                //template: "extension-b", defaults: new { controller = "ExtensionB", action = "Index" });
-
         }
     }
 }

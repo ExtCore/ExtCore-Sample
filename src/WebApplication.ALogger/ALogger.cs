@@ -17,14 +17,11 @@ using NLog.Extensions.Logging;
 namespace WebApplication.ALogger
 {
     /// <summary>
-    /// read seaquence
-    /// CommonModuler[Logging] -> MainModuer[MVC,WEB API,DB,Swagger]
+    /// Chain of module reads the sequence of the assembly name.
+    /// CommonModuler[Logging] -> MainModuer[MVC, WEB API, DB, Swagger]
     /// 
-    /// May be not using to ExtCore.Data Moduers, because ConfigureService Method on
-    /// Call service.AddEntityFramework or service.AddDBContext<IDBContext>()
-    /// 
-    /// Issue Autofac, LightInject, Catleproject.Core Can't Use IExtention
-    /// Do Not Make 'Ruby on Rails' CoC like rule.
+    /// Issue Autofac, LightInject, Castle.Core Can't Use IExtention
+    /// Do Not 'Assembly Scanning'.
     /// </summary>
     public class ALogger : IExtension
     {

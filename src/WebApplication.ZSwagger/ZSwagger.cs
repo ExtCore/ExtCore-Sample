@@ -58,8 +58,7 @@ namespace WebApplication.ZSwagger
         {
             routeBuilder.MapRoute(
                 name: "default",
-                template: "api/{controller=Home}/{id?}");
-                //template: "{controller=Home}/{action=Index}/{id?}");
+                template: "{controller=Home}/{action=Index}/{id?}");
         }
     }
 }
