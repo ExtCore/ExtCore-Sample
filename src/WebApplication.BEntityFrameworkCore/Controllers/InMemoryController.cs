@@ -15,6 +15,31 @@ namespace WebApplication.BEntityFrameworkCore.Controllers
         {
             _service = service;
         }
+        [HttpGet("create/data")]
+        public IActionResult Create()
+        {
+            try
+            {
+                using (var context = _service)
+                {
+
+                    context.InMemorys.AddRange(
+                        new InMemory { Id = 1, Name = "Gobo" },
+                        new InMemory { Id = 2, Name = "Monkey" },
+                        new InMemory { Id = 3, Name = "Red" },
+                        new InMemory { Id = 4, Name = "Wembley" },
+                        new InMemory { Id = 5, Name = "Boober" },
+                        new InMemory { Id = 6, Name = "Uncle Traveling Matt" }
+                    );
+                    context.SaveChanges();
+                }
+                return Ok();
+            }
+            catch
+            {
+                return BadRequest();
+            }
+        }
         [HttpGet]
         public IActionResult Get()
         {
@@ -42,31 +67,6 @@ namespace WebApplication.BEntityFrameworkCore.Controllers
             catch
             {
                 return NotFound();
-            }
-        }
-        [HttpGet("create/data")]
-        public IActionResult Create()
-        {
-            try
-            {
-                using (var context = _service)
-                {
-
-                    context.InMemorys.AddRange(
-                        new InMemory { Id = 1, Name = "Gobo" },
-                        new InMemory { Id = 2, Name = "Monkey" },
-                        new InMemory { Id = 3, Name = "Red" },
-                        new InMemory { Id = 4, Name = "Wembley" },
-                        new InMemory { Id = 5, Name = "Boober" },
-                        new InMemory { Id = 6, Name = "Uncle Traveling Matt" }
-                    );
-                    context.SaveChanges();
-                }
-                return Ok();
-            }
-            catch
-            {
-                return BadRequest();
             }
         }
     }
