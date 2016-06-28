@@ -1,15 +1,15 @@
 ﻿{
   "authors": [ "Dmitry Sikorsky" ],
   "dependencies": {
-    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-alpha8",
-    "ExtCore.Infrastructure": "1.0.0-alpha8",
-    "Microsoft.EntityFrameworkCore.Sqlite": "1.0.0-rc2-final",
-    "NETStandard.Library": "1.5.0-rc2-24027",
+    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-alpha9",
+    "ExtCore.Infrastructure": "1.0.0-alpha9",
+    "Microsoft.EntityFrameworkCore.Sqlite": "1.0.0",
+    "NETStandard.Library": "1.6.0",
     "WebApplication.ExtensionB.Data.Abstractions": "1.0.0",
     "WebApplication.ExtensionB.Data.Models": "1.0.0"
   },
   "frameworks": {
-    "netstandard1.5": {
+    "netstandard1.6": {
       "imports": [
         "dotnet5.6",
         "dnxcore50",
