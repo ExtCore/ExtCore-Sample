@@ -1,11 +1,14 @@
 ﻿{
-  "authors": [ "Dmitry Sikorsky" ],
+  "authors": [ "f7Q" ],
   "buildOptions": { "embed": [ "Views/**" ] },
   "dependencies": {
     "ExtCore.Infrastructure": "1.0.0-alpha8",
-    "Microsoft.EntityFrameworkCore.Sqlite": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.0",
-    "NETStandard.Library": "1.6.0"
+    "NETStandard.Library": "1.6.0",
+    "Microsoft.EntityFrameworkCore": "1.0.0",
+    "Microsoft.EntityFrameworkCore.InMemory": "1.0.0",
+    "Microsoft.EntityFrameworkCore.Sqlite": "1.0.0",
+    "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.0.0"
   },
   "frameworks": {
     "netcoreapp1.0": {

@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using WebApplication.ExtensionB.Models;
+using WebApplication.ExtensionB.Repository;
 
 namespace WebApplication.ExtensionB
 {
@@ -28,6 +31,13 @@ namespace WebApplication.ExtensionB
 
     public void ConfigureServices(IServiceCollection services)
     {
+
+      services
+        .AddEntityFrameworkSqlite()
+        .AddDbContext<ItemContext>(option =>
+          option.UseSqlite(this.configurationRoot["Data:DefaultConnection:ConnectionString"])
+        );
+      services.AddScoped<IItemRepository, ItemRepository>();
     }
 
     public void Configure(IApplicationBuilder applicationBuilder)

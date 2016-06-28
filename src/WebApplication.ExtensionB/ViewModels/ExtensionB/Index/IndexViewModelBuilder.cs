@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using WebApplication.ExtensionB.Data.Models;
+using WebApplication.ExtensionB.Models;
 using WebApplication.ExtensionB.ViewModels.Shared;
 
 namespace WebApplication.ExtensionB.ViewModels.ExtenstionB
