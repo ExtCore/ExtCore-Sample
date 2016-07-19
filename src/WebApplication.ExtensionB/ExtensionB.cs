@@ -6,52 +6,23 @@ using System.Collections.Generic;
 using ExtCore.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace WebApplication.ExtensionB
 {
-  public class ExtensionB : IExtension
+  public class ExtensionB : ExtensionBase
   {
-    private IConfigurationRoot configurationRoot;
-
-    public string Name
+    public override IEnumerable<KeyValuePair<int, Action<IRouteBuilder>>> UseMvcActionsByPriorities
     {
       get
       {
-        return "Extension B";
-      }
-    }
-
-    public IDictionary<int, Action<IRouteBuilder>> RouteRegistrarsByPriorities
-    {
-      get
-      {
-        Dictionary<int, Action<IRouteBuilder>> routeRegistrarsByPriorities = new Dictionary<int, Action<IRouteBuilder>>();
-
-        routeRegistrarsByPriorities.Add(
-          2000,
-          routeBuilder =>
+        return new Dictionary<int, Action<IRouteBuilder>>()
+        {
+          [2000] = routeBuilder =>
           {
             routeBuilder.MapRoute(name: "Extension B", template: "extension-b", defaults: new { controller = "ExtensionB", action = "Index" });
           }
-        );
-
-        return routeRegistrarsByPriorities;
+        };
       }
-    }
-
-    public void SetConfigurationRoot(IConfigurationRoot configurationRoot)
-    {
-      this.configurationRoot = configurationRoot;
-    }
-
-    public void ConfigureServices(IServiceCollection services)
-    {
-    }
-
-    public void Configure(IApplicationBuilder applicationBuilder)
-    {
     }
   }
 }

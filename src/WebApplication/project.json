@@ -7,15 +7,16 @@
     "preserveCompilationContext": true
   },
   "dependencies": {
-    "ExtCore.Data": "1.0.0-alpha9",
-    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-alpha9",
-    "ExtCore.Infrastructure": "1.0.0-alpha9",
-    "ExtCore.WebApplication": "1.0.0-alpha9",
+    "ExtCore.Data": "1.0.0-alpha10",
+    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-alpha10",
+    "ExtCore.Infrastructure": "1.0.0-alpha10",
+    "ExtCore.WebApplication": "1.0.0-alpha10",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.NETCore.App": {
       "version": "1.0.0",
       "type": "platform"

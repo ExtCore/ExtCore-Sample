@@ -5,14 +5,17 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace WebApplication
 {
   public class Startup : ExtCore.WebApplication.Startup
   {
-    public Startup(IHostingEnvironment hostingEnvironment)
-      : base(hostingEnvironment)
+    public Startup(IHostingEnvironment hostingEnvironment, ILoggerFactory loggerFactory)
+      : base(hostingEnvironment, loggerFactory)
     {
+      loggerFactory.AddConsole();
+
       IConfigurationBuilder configurationBuilder = new ConfigurationBuilder()
         .SetBasePath(hostingEnvironment.ContentRootPath)
         .AddJsonFile("config.json", optional: true, reloadOnChange: true);
@@ -25,9 +28,9 @@ namespace WebApplication
       base.ConfigureServices(services);
     }
 
-    public override void Configure(IApplicationBuilder applicationBuilder, IHostingEnvironment hostingEnvironment)
+    public override void Configure(IApplicationBuilder applicationBuilder)
     {
-      if (hostingEnvironment.IsDevelopment())
+      if (this.hostingEnvironment.IsDevelopment())
       {
         applicationBuilder.UseDeveloperExceptionPage();
         applicationBuilder.UseDatabaseErrorPage();
@@ -39,7 +42,7 @@ namespace WebApplication
 
       }
 
-      base.Configure(applicationBuilder, hostingEnvironment);
+      base.Configure(applicationBuilder);
     }
   }
 }
