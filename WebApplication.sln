@@ -26,6 +26,10 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication.ExtensionB.D
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication.ExtensionB.Data.EntityFramework.Sqlite", "src\WebApplication.ExtensionB.Data.EntityFramework.Sqlite\WebApplication.ExtensionB.Data.EntityFramework.Sqlite.xproj", "{AF7B3C14-BC6E-4964-BD0B-5233428349B6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NLog", "NLog", "{511BD310-4C03-407B-92EA-34110884C547}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication.NLog", "src\WebApplication.NLog\WebApplication.NLog.xproj", "{9E4B65AB-3F34-4C81-B02D-8E5643D2B3B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +60,10 @@ Global
 		{AF7B3C14-BC6E-4964-BD0B-5233428349B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF7B3C14-BC6E-4964-BD0B-5233428349B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF7B3C14-BC6E-4964-BD0B-5233428349B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E4B65AB-3F34-4C81-B02D-8E5643D2B3B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E4B65AB-3F34-4C81-B02D-8E5643D2B3B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E4B65AB-3F34-4C81-B02D-8E5643D2B3B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E4B65AB-3F34-4C81-B02D-8E5643D2B3B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +77,7 @@ Global
 		{396A8530-C500-469E-9F6F-A2D9C286C47D} = {4EA56716-702B-485A-A23A-10E110A85D78}
 		{922E22BD-10F8-4261-9ACC-9CD10A4C8147} = {4EA56716-702B-485A-A23A-10E110A85D78}
 		{AF7B3C14-BC6E-4964-BD0B-5233428349B6} = {4EA56716-702B-485A-A23A-10E110A85D78}
+		{511BD310-4C03-407B-92EA-34110884C547} = {0D7AEFA3-ABB0-4AF1-A4C1-F8E05C241753}
+		{9E4B65AB-3F34-4C81-B02D-8E5643D2B3B9} = {511BD310-4C03-407B-92EA-34110884C547}
 	EndGlobalSection
 EndGlobal
