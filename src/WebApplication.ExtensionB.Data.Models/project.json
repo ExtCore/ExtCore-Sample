@@ -1,8 +1,8 @@
 {
   "authors": [ "Dmitry Sikorsky" ],
   "dependencies": {
-    "ExtCore.Data.Models.Abstractions": "1.0.0-alpha13",
-    "ExtCore.Infrastructure": "1.0.0-alpha13",
+    "ExtCore.Data.Models.Abstractions": "1.0.0-alpha14",
+    "ExtCore.Infrastructure": "1.0.0-alpha14",
     "NETStandard.Library": "1.6.0"
   },
   "frameworks": {
