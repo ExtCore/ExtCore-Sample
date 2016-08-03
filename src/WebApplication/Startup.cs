@@ -1,6 +1,7 @@
 ﻿// Copyright © 2015 Dmitry Sikorsky. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -11,13 +12,13 @@ namespace WebApplication
 {
   public class Startup : ExtCore.WebApplication.Startup
   {
-    public Startup(IHostingEnvironment hostingEnvironment, ILoggerFactory loggerFactory)
-      : base(hostingEnvironment, loggerFactory)
+    public Startup(IServiceProvider serviceProvider)
+      : base(serviceProvider)
     {
-      loggerFactory.AddConsole();
+      this.serviceProvider.GetService<ILoggerFactory>().AddConsole();
 
       IConfigurationBuilder configurationBuilder = new ConfigurationBuilder()
-        .SetBasePath(hostingEnvironment.ContentRootPath)
+        .SetBasePath(this.serviceProvider.GetService<IHostingEnvironment>().ContentRootPath)
         .AddJsonFile("config.json", optional: true, reloadOnChange: true);
 
       this.configurationRoot = configurationBuilder.Build();
@@ -30,7 +31,7 @@ namespace WebApplication
 
     public override void Configure(IApplicationBuilder applicationBuilder)
     {
-      if (this.hostingEnvironment.IsDevelopment())
+      if (this.serviceProvider.GetService<IHostingEnvironment>().IsDevelopment())
       {
         applicationBuilder.UseDeveloperExceptionPage();
         applicationBuilder.UseDatabaseErrorPage();

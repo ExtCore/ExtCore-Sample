@@ -3,7 +3,7 @@
 
 using System;
 using System.Collections.Generic;
-using ExtCore.Infrastructure;
+using ExtCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 
