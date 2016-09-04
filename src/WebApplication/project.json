@@ -7,10 +7,10 @@
     "preserveCompilationContext": true
   },
   "dependencies": {
-    "ExtCore.Data": "1.0.0-alpha16",
-    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-alpha16",
-    "ExtCore.Mvc": "1.0.0-alpha16",
-    "ExtCore.WebApplication": "1.0.0-alpha16",
+    "ExtCore.Data": "1.0.0-beta1",
+    "ExtCore.Data.EntityFramework.Sqlite": "1.0.0-beta1",
+    "ExtCore.Mvc": "1.0.0-beta1",
+    "ExtCore.WebApplication": "1.0.0-beta1",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
