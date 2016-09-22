@@ -1,7 +1,7 @@
 ﻿{
   "Data": {
     "DefaultConnection": {
-	  // Please keep in mind that you have to change '\' to '/' on Linux-based systems
+      // Please keep in mind that you have to change '\' to '/' on Linux-based systems
       "ConnectionString": "Data Source=..\\..\\..\\db.sqlite"
     }
   },
