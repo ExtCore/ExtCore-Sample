@@ -9,9 +9,9 @@ namespace WebApplication.ExtensionB.Data.EntityFramework.Sqlite
 {
   public class ModelRegistrar : IModelRegistrar
   {
-    public void RegisterModels(ModelBuilder modelbuilder)
+    public void RegisterModels(ModelBuilder modelBuilder)
     {
-      modelbuilder.Entity<Item>(etb =>
+      modelBuilder.Entity<Item>(etb =>
         {
           etb.HasKey(e => e.Id);
           etb.Property(e => e.Id);
