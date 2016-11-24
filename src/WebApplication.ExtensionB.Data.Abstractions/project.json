@@ -5,13 +5,7 @@
     "WebApplication.ExtensionB.Data.Models": "1.0.0"
   },
   "frameworks": {
-    "netstandard1.6": {
-      "imports": [
-        "dotnet5.6",
-        "dnxcore50",
-        "portable-net45+win8"
-      ]
-    }
+    "netstandard1.6": {}
   },
   "version": "1.0.0-*"
 }

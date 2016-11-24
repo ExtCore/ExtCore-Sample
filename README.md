@@ -1,4 +1,4 @@
-﻿# ExtCore 1.0.0 Sample
+﻿# ExtCore 1.1.0-beta1 Sample
 
 [![Join the chat at https://gitter.im/ExtCore/ExtCore](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ExtCore/ExtCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -10,7 +10,7 @@ tools and languages (Visual Studio 2015, C# etc). Join our team!
 
 Please take a look at this sample.
 
-You can also download our [ready to use sample](http://extcore.net/files/ExtCore-Sample-1.0.0.zip).
+You can also download our [ready to use sample](http://extcore.net/files/ExtCore-Sample-1.1.0-beta1.zip).
 It contains everything you need to run ExtCore-based web application from Visual Studio 2015, including SQLite
 database with the test data.
 
