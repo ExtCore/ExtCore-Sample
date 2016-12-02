@@ -8,13 +8,13 @@ using WebApplication.ExtensionB.ViewModels.Shared;
 
 namespace WebApplication.ExtensionB.ViewModels.ExtenstionB
 {
-  public class IndexViewModelBuilder
+  public class IndexViewModelFactory
   {
-    public IndexViewModel Build(IEnumerable<Item> items)
+    public IndexViewModel Create(IEnumerable<Item> items)
     {
       return new IndexViewModel()
       {
-        Items = items.Select(i => new ItemViewModelBuilder().Build(i))
+        Items = items.Select(i => new ItemViewModelFactory().Create(i))
       };
     }
   }

@@ -19,7 +19,7 @@ namespace WebApplication.ExtensionB.Controllers
 
     public ActionResult Index()
     {
-      return this.View(new IndexViewModelBuilder().Build(this.storage.GetRepository<IItemRepository>().All()));
+      return this.View(new IndexViewModelFactory().Create(this.storage.GetRepository<IItemRepository>().All()));
     }
   }
 }

@@ -5,9 +5,9 @@ using WebApplication.ExtensionB.Data.Models;
 
 namespace WebApplication.ExtensionB.ViewModels.Shared
 {
-  public class ItemViewModelBuilder
+  public class ItemViewModelFactory
   {
-    public ItemViewModel Build(Item item)
+    public ItemViewModel Create(Item item)
     {
       return new ItemViewModel()
       {
