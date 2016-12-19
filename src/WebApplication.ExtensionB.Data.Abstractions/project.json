@@ -1,7 +1,7 @@
 {
   "authors": [ "Dmitry Sikorsky" ],
   "dependencies": {
-    "ExtCore.Data.Abstractions": "1.0.0",
+    "ExtCore.Data.Abstractions": "1.1.0",
     "WebApplication.ExtensionB.Data.Models": "1.0.0"
   },
   "frameworks": {

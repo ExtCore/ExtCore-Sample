@@ -2,7 +2,7 @@
   "authors": [ "Dmitry Sikorsky" ],
   "buildOptions": { "embed": [ "Views/**" ] },
   "dependencies": {
-    "ExtCore.Mvc.Infrastructure": "1.0.0",
+    "ExtCore.Mvc.Infrastructure": "1.1.0",
     "Microsoft.AspNetCore.Mvc": "1.1.0",
     "WebApplication.ExtensionB.Data.Abstractions": "1.0.0"
   },
