@@ -13,7 +13,9 @@ This is the full-featured ExtCore framework sample web application.
 ## Getting Started
 
 * rebuild the solution;
-* copy extensions DLL files into the Extensions folder of the main web application;
+* copy extensions DLL files into the Extensions folder of the main web application (this folder doesn’t exist by default,
+so you need to create it in the web application root or specify another location in the config.json file; also you may just
+add direct dependencies to the extensions in the project.json file of the main web application, but it is not so interesting);
 * run the main web application.
 
 ## More Information
@@ -22,7 +24,8 @@ This is the full-featured ExtCore framework sample web application.
 
 * [ExtCore Framework 1.1.0 Sample Simplest Web Application](https://github.com/ExtCore/ExtCore-Sample-Simplest);
 * [ExtCore Framework 1.1.0 Sample MVC Web Application](https://github.com/ExtCore/ExtCore-Sample-Mvc);
-* [ExtCore Framework 1.1.0 Sample Web Application That Uses a Database](https://github.com/ExtCore/ExtCore-Sample-Data).
+* [ExtCore Framework 1.1.0 Sample Web Application That Uses a Database](https://github.com/ExtCore/ExtCore-Sample-Data);
+* [ExtCore Framework 1.1.0 Sample Web Application with Modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui).
 
 You can also download our [ready to use full-featured sample](http://extcore.net/files/ExtCore-Sample-1.1.0.zip).
 It contains everything you need to run ExtCore-based web application from Visual Studio 2015, including SQLite
