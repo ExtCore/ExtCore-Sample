@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Dmitry Sikorsky</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>WebApplication.ExtensionB.Data.EntityFramework.Sqlite</AssemblyName>
+    <PackageId>WebApplication.ExtensionB.Data.EntityFramework.Sqlite</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebApplication.ExtensionB.Data.Abstractions\WebApplication.ExtensionB.Data.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>

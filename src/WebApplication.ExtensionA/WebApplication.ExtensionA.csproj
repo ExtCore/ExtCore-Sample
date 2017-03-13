@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Dmitry Sikorsky</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>WebApplication.ExtensionA</AssemblyName>
+    <PackageId>WebApplication.ExtensionA</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Styles\**;Views\**" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>

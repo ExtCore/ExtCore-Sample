@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Dmitry Sikorsky</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>WebApplication.ExtensionB.Data.Models</AssemblyName>
+    <PackageId>WebApplication.ExtensionB.Data.Models</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExtCore.Data.Models.Abstractions" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,30 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0D7AEFA3-ABB0-4AF1-A4C1-F8E05C241753}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABB81F71-8F88-41F7-A235-9458DB99BB7D}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication", "src\WebApplication\WebApplication.xproj", "{B511B595-A980-4D5C-BC2A-BCCB4065B433}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication.ExtensionA", "src\WebApplication.ExtensionA\WebApplication.ExtensionA.xproj", "{8D722841-4E2C-4673-A7CC-C2690EFE3915}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExtensionA", "ExtensionA", "{F92B44CF-63EE-4781-8244-48ACC5386A8C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExtensionB", "ExtensionB", "{4EA56716-702B-485A-A23A-10E110A85D78}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication.ExtensionB.Data.Models", "src\WebApplication.ExtensionB.Data.Models\WebApplication.ExtensionB.Data.Models.xproj", "{6EB08C04-9CA2-48B7-9404-3188AFA3E2DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "src\WebApplication\WebApplication.csproj", "{B511B595-A980-4D5C-BC2A-BCCB4065B433}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication.ExtensionB", "src\WebApplication.ExtensionB\WebApplication.ExtensionB.xproj", "{396A8530-C500-469E-9F6F-A2D9C286C47D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionA", "src\WebApplication.ExtensionA\WebApplication.ExtensionA.csproj", "{8D722841-4E2C-4673-A7CC-C2690EFE3915}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication.ExtensionB.Data.Abstractions", "src\WebApplication.ExtensionB.Data.Abstractions\WebApplication.ExtensionB.Data.Abstractions.xproj", "{922E22BD-10F8-4261-9ACC-9CD10A4C8147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionB.Data.Models", "src\WebApplication.ExtensionB.Data.Models\WebApplication.ExtensionB.Data.Models.csproj", "{6EB08C04-9CA2-48B7-9404-3188AFA3E2DF}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication.ExtensionB.Data.EntityFramework.Sqlite", "src\WebApplication.ExtensionB.Data.EntityFramework.Sqlite\WebApplication.ExtensionB.Data.EntityFramework.Sqlite.xproj", "{AF7B3C14-BC6E-4964-BD0B-5233428349B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionB", "src\WebApplication.ExtensionB\WebApplication.ExtensionB.csproj", "{396A8530-C500-469E-9F6F-A2D9C286C47D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionB.Data.Abstractions", "src\WebApplication.ExtensionB.Data.Abstractions\WebApplication.ExtensionB.Data.Abstractions.csproj", "{922E22BD-10F8-4261-9ACC-9CD10A4C8147}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionB.Data.EntityFramework.Sqlite", "src\WebApplication.ExtensionB.Data.EntityFramework.Sqlite\WebApplication.ExtensionB.Data.EntityFramework.Sqlite.csproj", "{AF7B3C14-BC6E-4964-BD0B-5233428349B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,10 +58,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B511B595-A980-4D5C-BC2A-BCCB4065B433} = {0D7AEFA3-ABB0-4AF1-A4C1-F8E05C241753}
-		{8D722841-4E2C-4673-A7CC-C2690EFE3915} = {F92B44CF-63EE-4781-8244-48ACC5386A8C}
 		{F92B44CF-63EE-4781-8244-48ACC5386A8C} = {0D7AEFA3-ABB0-4AF1-A4C1-F8E05C241753}
 		{4EA56716-702B-485A-A23A-10E110A85D78} = {0D7AEFA3-ABB0-4AF1-A4C1-F8E05C241753}
+		{B511B595-A980-4D5C-BC2A-BCCB4065B433} = {0D7AEFA3-ABB0-4AF1-A4C1-F8E05C241753}
+		{8D722841-4E2C-4673-A7CC-C2690EFE3915} = {F92B44CF-63EE-4781-8244-48ACC5386A8C}
 		{6EB08C04-9CA2-48B7-9404-3188AFA3E2DF} = {4EA56716-702B-485A-A23A-10E110A85D78}
 		{396A8530-C500-469E-9F6F-A2D9C286C47D} = {4EA56716-702B-485A-A23A-10E110A85D78}
 		{922E22BD-10F8-4261-9ACC-9CD10A4C8147} = {4EA56716-702B-485A-A23A-10E110A85D78}

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Dmitry Sikorsky</Authors>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>WebApplication.ExtensionB</AssemblyName>
+    <PackageId>WebApplication.ExtensionB</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Views\**" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebApplication.ExtensionB.Data.Abstractions\WebApplication.ExtensionB.Data.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+  </ItemGroup>
+
+</Project>
