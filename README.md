@@ -25,7 +25,8 @@ add direct dependencies to the extensions in the project.json file of the main w
 * [ExtCore Framework 1.1.1 Sample Simplest Web Application](https://github.com/ExtCore/ExtCore-Sample-Simplest);
 * [ExtCore Framework 1.1.1 Sample MVC Web Application](https://github.com/ExtCore/ExtCore-Sample-Mvc);
 * [ExtCore Framework 1.1.1 Sample Web Application That Uses a Database](https://github.com/ExtCore/ExtCore-Sample-Data);
-* [ExtCore Framework 1.1.1 Sample Web Application with Modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui).
+* [ExtCore Framework 1.1.1 Sample Web Application with Modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui);
+* [ExtCore Framework 1.1.1 Sample Web Application That Registers a Service Inside the Extension](https://github.com/ExtCore/ExtCore-Sample-Service).
 
 You can also download our [ready to use full-featured sample](http://extcore.net/files/ExtCore-Sample-1.1.1.zip).
 It contains everything you need to run ExtCore-based web application from Visual Studio 2015, including SQLite
