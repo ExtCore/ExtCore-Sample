@@ -1,4 +1,4 @@
-﻿# Full-Featured ExtCore Framework 1.1.1 Sample Web Application
+# Full-Featured ExtCore Framework 1.1.1 Sample Web Application
 
 [![Join the chat at https://gitter.im/ExtCore/ExtCore](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ExtCore/ExtCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
