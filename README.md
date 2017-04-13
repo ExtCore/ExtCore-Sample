@@ -27,7 +27,7 @@ add direct dependencies to the main web application project instead, but it is n
 * [ExtCore framework 1.1.3 sample web application that uses a database](https://github.com/ExtCore/ExtCore-Sample-Data);
 * [ExtCore framework 1.1.3 sample web application with modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui);
 * [ExtCore framework 1.1.3 sample web application that registers a service inside the extension](https://github.com/ExtCore/ExtCore-Sample-Service);
-* [ExtCore framework 1.2.0 sample web application that uses the events](https://github.com/ExtCore/ExtCore-Sample-Service);
+* [ExtCore framework 1.2.0 sample web application that uses the events](https://github.com/ExtCore/ExtCore-Sample-Events);
 * [ExtCore framework 1.1.3 sample API web application](https://github.com/ExtCore/ExtCore-Sample-Api).
 
 You can also download our [ready to use full-featured sample](http://extcore.net/files/ExtCore-Sample-1.1.3.zip).
