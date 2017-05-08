@@ -3,12 +3,10 @@
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
     <TargetFramework>netstandard1.6</TargetFramework>
-    <AssemblyName>WebApplication.ExtensionB.Data.EntityFramework.Sqlite</AssemblyName>
-    <PackageId>WebApplication.ExtensionB.Data.EntityFramework.Sqlite</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="1.1.3" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>

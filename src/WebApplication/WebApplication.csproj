@@ -3,24 +3,13 @@
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <PreserveCompilationContext>true</PreserveCompilationContext>
-    <AssemblyName>WebApplication</AssemblyName>
-    <OutputType>Exe</OutputType>
-    <PackageId>WebApplication</PackageId>
-    <RuntimeFrameworkVersion>1.1.1</RuntimeFrameworkVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Views\**\*">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="ExtCore.Data" Version="1.1.3" />
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="1.1.3" />
-    <PackageReference Include="ExtCore.Mvc" Version="1.1.3" />
-    <PackageReference Include="ExtCore.WebApplication" Version="1.1.3" />
+    <PackageReference Include="ExtCore.Data" Version="1.2.0" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="1.2.0" />
+    <PackageReference Include="ExtCore.Mvc" Version="1.2.0" />
+    <PackageReference Include="ExtCore.WebApplication" Version="1.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.1" />
