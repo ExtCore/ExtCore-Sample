@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 using ExtCore.Data.Abstractions;
-using WebApplication.ExtensionB.Data.Models;
+using WebApplication.ExtensionB.Data.Entities;
 
 namespace WebApplication.ExtensionB.Data.Abstractions
 {

@@ -1,7 +1,8 @@
 ﻿// Copyright © 2015 Dmitry Sikorsky. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using System;
+using ExtCore.Data.EntityFramework;
+using ExtCore.WebApplication.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -10,40 +11,43 @@ using Microsoft.Extensions.Logging;
 
 namespace WebApplication
 {
-  public class Startup : ExtCore.WebApplication.Startup
+  public class Startup
   {
-    public Startup(IServiceProvider serviceProvider)
-      : base(serviceProvider)
-    {
-      this.serviceProvider.GetService<ILoggerFactory>().AddConsole();
+    private IConfigurationRoot configurationRoot;
+    private string extensionsPath;
 
+    public Startup(IHostingEnvironment hostingEnvironment, ILoggerFactory loggerFactory)
+    {
       IConfigurationBuilder configurationBuilder = new ConfigurationBuilder()
-        .SetBasePath(this.serviceProvider.GetService<IHostingEnvironment>().ContentRootPath)
-        .AddJsonFile("config.json", optional: true, reloadOnChange: true);
+        .SetBasePath(hostingEnvironment.ContentRootPath)
+        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
       this.configurationRoot = configurationBuilder.Build();
+      this.extensionsPath = hostingEnvironment.ContentRootPath + this.configurationRoot["Extensions:Path"];
+      loggerFactory.AddConsole();
+      loggerFactory.AddDebug();
     }
 
-    public override void ConfigureServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
     {
-      base.ConfigureServices(services);
+      services.AddExtCore(this.extensionsPath);
+      services.Configure<StorageContextOptions>(options =>
+      {
+        options.ConnectionString = this.configurationRoot.GetConnectionString("Default");
+      }
+      );
     }
 
-    public override void Configure(IApplicationBuilder applicationBuilder)
+    public void Configure(IApplicationBuilder applicationBuilder, IHostingEnvironment hostingEnvironment)
     {
-      if (this.serviceProvider.GetService<IHostingEnvironment>().IsDevelopment())
+      if (hostingEnvironment.IsDevelopment())
       {
         applicationBuilder.UseDeveloperExceptionPage();
         applicationBuilder.UseDatabaseErrorPage();
         applicationBuilder.UseBrowserLink();
       }
 
-      else
-      {
-
-      }
-
-      base.Configure(applicationBuilder);
+      applicationBuilder.UseExtCore();
     }
   }
 }

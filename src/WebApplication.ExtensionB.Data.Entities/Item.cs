@@ -1,9 +1,9 @@
 ﻿// Copyright © 2015 Dmitry Sikorsky. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using ExtCore.Data.Models.Abstractions;
+using ExtCore.Data.Entities.Abstractions;
 
-namespace WebApplication.ExtensionB.Data.Models
+namespace WebApplication.ExtensionB.Data.Entities
 {
   public class Item : IEntity
   {

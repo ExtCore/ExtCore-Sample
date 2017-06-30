@@ -6,7 +6,7 @@ gulp.task(
     gulp.src(["../WebApplication.ExtensionB/bin/Debug/netstandard1.6/WebApplication.ExtensionB.dll"]).pipe(gulp.dest("Extensions"));
     gulp.src(["../WebApplication.ExtensionB.Data.Abstractions/bin/Debug/netstandard1.6/WebApplication.ExtensionB.Data.Abstractions.dll"]).pipe(gulp.dest("Extensions"));
     gulp.src(["../WebApplication.ExtensionB.Data.EntityFramework.Sqlite/bin/Debug/netstandard1.6/WebApplication.ExtensionB.Data.EntityFramework.Sqlite.dll"]).pipe(gulp.dest("Extensions"));
-    gulp.src(["../WebApplication.ExtensionB.Data.Models/bin/Debug/netstandard1.6/WebApplication.ExtensionB.Data.Models.dll"]).pipe(gulp.dest("Extensions"));
+    gulp.src(["../WebApplication.ExtensionB.Data.Entities/bin/Debug/netstandard1.6/WebApplication.ExtensionB.Data.Entities.dll"]).pipe(gulp.dest("Extensions"));
     cb();
   }
 );

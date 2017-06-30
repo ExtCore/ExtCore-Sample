@@ -11,7 +11,7 @@ namespace WebApplication.ExtensionA.Controllers
   {
     public ActionResult Index()
     {
-      return this.View(ExtensionManager.Extensions.Select(e => e.Name));
+      return this.View(ExtensionManager.GetInstances<IExtension>().Select(e => e.Name));
     }
   }
 }

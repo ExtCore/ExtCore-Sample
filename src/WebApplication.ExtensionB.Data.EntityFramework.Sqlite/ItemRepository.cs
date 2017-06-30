@@ -3,9 +3,9 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using ExtCore.Data.EntityFramework.Sqlite;
+using ExtCore.Data.EntityFramework;
 using WebApplication.ExtensionB.Data.Abstractions;
-using WebApplication.ExtensionB.Data.Models;
+using WebApplication.ExtensionB.Data.Entities;
 
 namespace WebApplication.ExtensionB.Data.EntityFramework.Sqlite
 {

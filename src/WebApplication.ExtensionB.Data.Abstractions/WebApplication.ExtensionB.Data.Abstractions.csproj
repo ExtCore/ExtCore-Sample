@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data.Abstractions" Version="1.2.0" />
+    <PackageReference Include="ExtCore.Data.Abstractions" Version="2.0.0-alpha1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApplication.ExtensionB.Data.Models\WebApplication.ExtensionB.Data.Models.csproj" />
+    <ProjectReference Include="..\WebApplication.ExtensionB.Data.Entities\WebApplication.ExtensionB.Data.Entities.csproj" />
   </ItemGroup>
 
 </Project>

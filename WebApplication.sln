@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "src\WebAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionA", "src\WebApplication.ExtensionA\WebApplication.ExtensionA.csproj", "{8D722841-4E2C-4673-A7CC-C2690EFE3915}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionB.Data.Models", "src\WebApplication.ExtensionB.Data.Models\WebApplication.ExtensionB.Data.Models.csproj", "{6EB08C04-9CA2-48B7-9404-3188AFA3E2DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionB.Data.Entities", "src\WebApplication.ExtensionB.Data.Entities\WebApplication.ExtensionB.Data.Entities.csproj", "{6EB08C04-9CA2-48B7-9404-3188AFA3E2DF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.ExtensionB", "src\WebApplication.ExtensionB\WebApplication.ExtensionB.csproj", "{396A8530-C500-469E-9F6F-A2D9C286C47D}"
 EndProject

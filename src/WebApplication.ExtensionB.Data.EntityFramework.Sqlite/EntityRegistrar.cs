@@ -1,15 +1,15 @@
 ﻿// Copyright © 2015 Dmitry Sikorsky. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using ExtCore.Data.EntityFramework.Sqlite;
+using ExtCore.Data.EntityFramework;
 using Microsoft.EntityFrameworkCore;
-using WebApplication.ExtensionB.Data.Models;
+using WebApplication.ExtensionB.Data.Entities;
 
 namespace WebApplication.ExtensionB.Data.EntityFramework.Sqlite
 {
-  public class ModelRegistrar : IModelRegistrar
+  public class EntityRegistrar : IEntityRegistrar
   {
-    public void RegisterModels(ModelBuilder modelBuilder)
+    public void RegisterEntities(ModelBuilder modelBuilder)
     {
       modelBuilder.Entity<Item>(etb =>
         {

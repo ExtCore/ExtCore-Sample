@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data.Models.Abstractions" Version="1.2.0" />
+    <PackageReference Include="ExtCore.Data.Entities.Abstractions" Version="2.0.0-alpha1" />
   </ItemGroup>
 
 </Project>
