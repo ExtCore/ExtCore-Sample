@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="2.1.0-beta1" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="2.1.0-beta2" />
   </ItemGroup>
 
   <ItemGroup>
