@@ -1,13 +1,17 @@
 ﻿// Copyright © 2015 Dmitry Sikorsky. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
+//using System;
 using ExtCore.Data.EntityFramework;
 using ExtCore.WebApplication.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+//using Microsoft.AspNetCore.Http;
+//using Microsoft.AspNetCore.Http.Headers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+//using Microsoft.Net.Http.Headers;
 
 namespace WebApplication
 {
@@ -30,11 +34,28 @@ namespace WebApplication
 
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddExtCore(this.extensionsPath);
+      services.AddExtCore(this.extensionsPath, this.configurationRoot["Extensions:IncludingSubpaths"] == true.ToString());
+
+      /*
+      services.Configure<StaticFileOptions>(options =>
+        {
+          options.OnPrepareResponse = (context) =>
+          {
+            ResponseHeaders headers = context.Context.Response.GetTypedHeaders();
+
+            headers.CacheControl = new CacheControlHeaderValue()
+            {
+              MaxAge = TimeSpan.FromSeconds(60),
+            };
+          };
+        }
+      );
+      */
+
       services.Configure<StorageContextOptions>(options =>
-      {
-        options.ConnectionString = this.configurationRoot.GetConnectionString("Default");
-      }
+        {
+          options.ConnectionString = this.configurationRoot.GetConnectionString("Default");
+        }
       );
     }
 
