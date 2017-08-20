@@ -2,22 +2,14 @@
 
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data" Version="2.1.0" />
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="2.1.0" />
-    <PackageReference Include="ExtCore.Mvc" Version="2.1.0" />
-    <PackageReference Include="ExtCore.WebApplication" Version="2.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.1.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="1.1.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+    <PackageReference Include="ExtCore.Data" Version="3.0.0-alpha1" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="3.0.0-alpha1" />
+    <PackageReference Include="ExtCore.Mvc" Version="3.0.0-alpha1" />
+    <PackageReference Include="ExtCore.WebApplication" Version="3.0.0-alpha1" />
   </ItemGroup>
 
 </Project>

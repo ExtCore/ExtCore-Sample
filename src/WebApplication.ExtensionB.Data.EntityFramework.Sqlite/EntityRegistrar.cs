@@ -15,7 +15,7 @@ namespace WebApplication.ExtensionB.Data.EntityFramework.Sqlite
         {
           etb.HasKey(e => e.Id);
           etb.Property(e => e.Id);
-          etb.ForSqliteToTable("Items");
+          etb.ToTable("Items");
         }
       );
     }

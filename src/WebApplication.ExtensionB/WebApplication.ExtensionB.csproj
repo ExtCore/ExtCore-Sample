@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,12 +10,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApplication.ExtensionB.Data.Abstractions\WebApplication.ExtensionB.Data.Abstractions.csproj" />
+    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="3.0.0-alpha1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="2.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+    <ProjectReference Include="..\WebApplication.ExtensionB.Data.Abstractions\WebApplication.ExtensionB.Data.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
