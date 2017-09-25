@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="3.0.0-beta1" />
+    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
