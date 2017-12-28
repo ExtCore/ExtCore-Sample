@@ -1,4 +1,6 @@
 .vs/
 bin/
 obj/
+Extensions/
 src/WebApplication/node_modules/
+*.user
