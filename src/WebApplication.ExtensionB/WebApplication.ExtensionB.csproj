@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="3.2.0" />
+    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="3.3.0" />
   </ItemGroup>
 
   <ItemGroup>

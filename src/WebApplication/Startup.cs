@@ -13,27 +13,23 @@ namespace WebApplication
 {
   public class Startup
   {
-    private IConfigurationRoot configurationRoot;
+    private IConfiguration configuration;
     private string extensionsPath;
 
-    public Startup(IHostingEnvironment hostingEnvironment, ILoggerFactory loggerFactory)
+    public Startup(IHostingEnvironment hostingEnvironment, IConfiguration configuration, ILoggerFactory loggerFactory)
     {
-      IConfigurationBuilder configurationBuilder = new ConfigurationBuilder()
-        .SetBasePath(hostingEnvironment.ContentRootPath)
-        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-
-      this.configurationRoot = configurationBuilder.Build();
-      this.extensionsPath = hostingEnvironment.ContentRootPath + this.configurationRoot["Extensions:Path"];
+      this.configuration = configuration;
+      this.extensionsPath = hostingEnvironment.ContentRootPath + this.configuration["Extensions:Path"];
       loggerFactory.AddConsole();
       loggerFactory.AddDebug();
     }
 
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddExtCore(this.extensionsPath, this.configurationRoot["Extensions:IncludingSubpaths"] == true.ToString());
+      services.AddExtCore(this.extensionsPath, this.configuration["Extensions:IncludingSubpaths"] == true.ToString());
       services.Configure<StorageContextOptions>(options =>
         {
-          options.ConnectionString = this.configurationRoot.GetConnectionString("Default");
+          options.ConnectionString = this.configuration.GetConnectionString("Default");
         }
       );
     }
@@ -44,7 +40,6 @@ namespace WebApplication
       {
         applicationBuilder.UseDeveloperExceptionPage();
         applicationBuilder.UseDatabaseErrorPage();
-        applicationBuilder.UseBrowserLink();
       }
 
       applicationBuilder.UseExtCore();
