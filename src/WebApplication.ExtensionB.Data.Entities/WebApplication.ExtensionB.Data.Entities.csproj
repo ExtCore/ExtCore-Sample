@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data.Entities.Abstractions" Version="3.3.0" />
+    <PackageReference Include="ExtCore.Data.Entities.Abstractions" Version="4.0.0" />
   </ItemGroup>
 
 </Project>
