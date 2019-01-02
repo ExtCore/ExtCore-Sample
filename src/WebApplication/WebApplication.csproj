@@ -7,9 +7,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="ExtCore.Data" Version="4.0.0" />
     <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="4.0.0" />
     <PackageReference Include="ExtCore.Mvc" Version="4.0.0" />
