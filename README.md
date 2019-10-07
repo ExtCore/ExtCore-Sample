@@ -1,4 +1,4 @@
-# Full-Featured ExtCore Framework 4.0.0 Sample Web Application
+# Full-Featured ExtCore Framework 5.0.0-alpha1 Sample Web Application
 
 [![Join the chat at https://gitter.im/ExtCore/ExtCore](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ExtCore/ExtCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -6,7 +6,7 @@
 
 [ExtCore](https://github.com/ExtCore/ExtCore) is free, open source and cross-platform framework for creating
 modular and extendable web applications based on ASP.NET Core. It is built using the best and the most modern
-tools and languages (Visual Studio 2017, C# etc). Join our team!
+tools and languages (Visual Studio 2019, C# etc). Join our team!
 
 This is the full-featured ExtCore framework sample web application.
 
@@ -34,8 +34,8 @@ add direct dependencies to the main web application project instead, but it is n
 * [ExtCore framework 4.0.0 sample web application that uses the events](https://github.com/ExtCore/ExtCore-Sample-Events);
 * [ExtCore framework 4.0.0 sample API web application](https://github.com/ExtCore/ExtCore-Sample-Api).
 
-You can also download our [ready to use full-featured sample](http://extcore.net/files/ExtCore-Sample-4.0.0.zip).
-It contains everything you need to run ExtCore-based web application from Visual Studio 2017, including SQLite
+You can also download our [ready to use full-featured sample](http://extcore.net/files/ExtCore-Sample-5.0.0-alpha1.zip).
+It contains everything you need to run ExtCore-based web application from Visual Studio 2019, including SQLite
 database with the test data.
 
 ### Tutorials

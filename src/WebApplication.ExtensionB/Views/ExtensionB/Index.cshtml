@@ -4,7 +4,7 @@
 @{ 
   this.ViewBag.Title = "View from Extension B";
 }
-<h1>View from Extension B (<span class="suspended">Precompiled</span>* Added as Resource)</h1>
+<h1>View from Extension B (<span class="suspended">Added as Resource</span>* Precompiled)</h1>
 <p>Items from SQLite database:</p>
 <div class="items">
   @foreach (var item in this.Model.Items)
@@ -14,4 +14,4 @@
 </div>
 <p class="from-resources">This line is red because of the rule in CSS-file added as resource (from Extension A).</p>
 <p>So any extension can use resources from any other extension.</p>
-<p>* Precompiled views support has been suspended in ASP.NET Core 1.0 RC2.</p>
+<p>* Razor runtime compilation is turned off by default starting from ASP.NET Core 3.0 and not supported by the ExtCore framework so far (5.0.0-alpha1).</p>

@@ -7,40 +7,36 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
 
 namespace WebApplication
 {
   public class Startup
   {
-    private IConfiguration configuration;
     private string extensionsPath;
 
-    public Startup(IHostingEnvironment hostingEnvironment, IConfiguration configuration, ILoggerFactory loggerFactory)
+    public IConfiguration Configuration { get; }
+
+    public Startup(IConfiguration configuration, IWebHostEnvironment webHostEnvironment)
     {
-      this.configuration = configuration;
-      this.extensionsPath = hostingEnvironment.ContentRootPath + this.configuration["Extensions:Path"];
-      loggerFactory.AddConsole();
-      loggerFactory.AddDebug();
+      this.Configuration = configuration;
+      this.extensionsPath = webHostEnvironment.ContentRootPath + this.Configuration["Extensions:Path"];
     }
 
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddExtCore(this.extensionsPath, this.configuration["Extensions:IncludingSubpaths"] == true.ToString());
+      services.AddExtCore(this.extensionsPath, this.Configuration["Extensions:IncludingSubpaths"] == true.ToString());
       services.Configure<StorageContextOptions>(options =>
-        {
-          options.ConnectionString = this.configuration.GetConnectionString("Default");
-        }
+      {
+        options.ConnectionString = this.Configuration.GetConnectionString("Default");
+      }
       );
     }
 
-    public void Configure(IApplicationBuilder applicationBuilder, IHostingEnvironment hostingEnvironment)
+    public void Configure(IApplicationBuilder applicationBuilder, IWebHostEnvironment webHostEnvironment)
     {
-      if (hostingEnvironment.IsDevelopment())
-      {
+      if (webHostEnvironment.IsDevelopment())
         applicationBuilder.UseDeveloperExceptionPage();
-        applicationBuilder.UseDatabaseErrorPage();
-      }
 
       applicationBuilder.UseExtCore();
     }

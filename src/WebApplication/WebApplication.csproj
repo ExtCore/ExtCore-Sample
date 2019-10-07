@@ -2,15 +2,18 @@
 
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
-    <PackageReference Include="ExtCore.Data" Version="4.0.0" />
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="4.0.0" />
-    <PackageReference Include="ExtCore.Mvc" Version="4.0.0" />
-    <PackageReference Include="ExtCore.WebApplication" Version="4.0.0" />
+    <PackageReference Include="ExtCore.Data" Version="5.0.0-alpha1" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="5.0.0-alpha1" />
+    <PackageReference Include="ExtCore.Mvc" Version="5.0.0-alpha1" />
+    <PackageReference Include="ExtCore.WebApplication" Version="5.0.0-alpha1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

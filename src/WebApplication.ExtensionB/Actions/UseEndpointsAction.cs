@@ -8,13 +8,13 @@ using Microsoft.AspNetCore.Routing;
 
 namespace ExtensionB.Actions
 {
-  public class UseMvcAction : IUseMvcAction
+  public class UseEndpointsAction : IUseEndpointsAction
   {
     public int Priority => 2000;
 
-    public void Execute(IRouteBuilder routeBuilder, IServiceProvider serviceProvider)
+    public void Execute(IEndpointRouteBuilder endpointRouteBuilder, IServiceProvider serviceProvider)
     {
-      routeBuilder.MapRoute(name: "Extension B", template: "extension-b", defaults: new { controller = "ExtensionB", action = "Index" });
+      endpointRouteBuilder.MapControllerRoute(name: "Extension B", pattern: "extension-b", defaults: new { controller = "ExtensionB", action = "Index" });
     }
   }
 }

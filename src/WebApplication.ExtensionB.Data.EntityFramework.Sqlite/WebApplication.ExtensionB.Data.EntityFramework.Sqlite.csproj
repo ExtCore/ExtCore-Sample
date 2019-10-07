@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="4.0.0" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="5.0.0-alpha1" />
   </ItemGroup>
 
   <ItemGroup>
