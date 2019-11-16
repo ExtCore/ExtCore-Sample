@@ -27,9 +27,9 @@ namespace WebApplication
     {
       services.AddExtCore(this.extensionsPath, this.Configuration["Extensions:IncludingSubpaths"] == true.ToString());
       services.Configure<StorageContextOptions>(options =>
-      {
-        options.ConnectionString = this.Configuration.GetConnectionString("Default");
-      }
+        {
+          options.ConnectionString = this.Configuration.GetConnectionString("Default");
+        }
       );
     }
 

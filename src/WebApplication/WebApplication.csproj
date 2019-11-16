@@ -6,14 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data" Version="5.0.0-alpha1" />
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="5.0.0-alpha1" />
-    <PackageReference Include="ExtCore.Mvc" Version="5.0.0-alpha1" />
-    <PackageReference Include="ExtCore.WebApplication" Version="5.0.0-alpha1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Extensions\" />
+    <PackageReference Include="ExtCore.Data" Version="5.0.0" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="5.0.0" />
+    <PackageReference Include="ExtCore.Mvc" Version="5.0.0" />
+    <PackageReference Include="ExtCore.WebApplication" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
