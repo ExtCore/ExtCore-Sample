@@ -4,3 +4,4 @@ obj/
 Extensions/
 src/WebApplication/node_modules/
 *.user
+/src/WebApplication/package-lock.json
