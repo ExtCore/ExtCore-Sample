@@ -57,3 +57,5 @@ Website: http://extcore.net/
 Docs: http://docs.extcore.net/
 
 Author: http://sikorsky.pro/
+
+Patreon: https://www.patreon.com/dmitry_sikorsky (you can support this project)
