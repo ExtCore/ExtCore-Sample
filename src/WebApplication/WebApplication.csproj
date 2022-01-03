@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Data" Version="6.0.0" />
-    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="6.0.0" />
-    <PackageReference Include="ExtCore.Mvc" Version="6.0.0" />
-    <PackageReference Include="ExtCore.WebApplication" Version="6.0.0" />
+    <PackageReference Include="ExtCore.Data" Version="7.0.0" />
+    <PackageReference Include="ExtCore.Data.EntityFramework.Sqlite" Version="7.0.0" />
+    <PackageReference Include="ExtCore.Mvc" Version="7.0.0" />
+    <PackageReference Include="ExtCore.WebApplication" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>

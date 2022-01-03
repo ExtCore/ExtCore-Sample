@@ -1,4 +1,4 @@
-# Full-Featured ExtCore Framework 6.0.0 Sample Web Application
+# Full-Featured ExtCore Framework 7.0.0 Sample Web Application
 
 [![Join the chat at https://gitter.im/ExtCore/ExtCore](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ExtCore/ExtCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -6,7 +6,7 @@
 
 [ExtCore](https://github.com/ExtCore/ExtCore) is free, open source and cross-platform framework for creating
 modular and extendable web applications based on ASP.NET Core. It is built using the best and the most modern
-tools and languages (Visual Studio 2019, C# etc). Join our team!
+tools and languages (Visual Studio 2022, C# etc). Join our team!
 
 This is the full-featured ExtCore framework sample web application.
 
@@ -22,20 +22,20 @@ add direct dependencies to the main web application project instead, but it is n
 
 ### Other Samples
 
-* [ExtCore framework 6.0.0 sample simplest web application](https://github.com/ExtCore/ExtCore-Sample-Simplest);
-* [ExtCore framework 6.0.0 sample MVC web application](https://github.com/ExtCore/ExtCore-Sample-Mvc);
-* [ExtCore framework 6.0.0 sample web application that uses file storage](https://github.com/ExtCore/ExtCore-Sample-FileStorage);
-* [ExtCore framework 6.0.0 sample web application that uses a database](https://github.com/ExtCore/ExtCore-Sample-Data);
-* [ExtCore framework 6.0.0 sample web application that uses Identity](https://github.com/ExtCore/ExtCore-Sample-Identity);
-* [ExtCore framework 6.0.0 sample web application with modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui);
-* [ExtCore framework 6.0.0 advanced sample web application with modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui-Adv);
-* [ExtCore framework 6.0.0 advanced sample accounting web application](https://github.com/ExtCore/ExtCore-Sample-Accounting);
-* [ExtCore framework 6.0.0 sample web application that registers a service inside the extension](https://github.com/ExtCore/ExtCore-Sample-Service);
-* [ExtCore framework 6.0.0 sample web application that uses the events](https://github.com/ExtCore/ExtCore-Sample-Events);
-* [ExtCore framework 6.0.0 sample API web application](https://github.com/ExtCore/ExtCore-Sample-Api).
+* [ExtCore framework 7.0.0 sample simplest web application](https://github.com/ExtCore/ExtCore-Sample-Simplest);
+* [ExtCore framework 7.0.0 sample MVC web application](https://github.com/ExtCore/ExtCore-Sample-Mvc);
+* [ExtCore framework 7.0.0 sample web application that uses file storage](https://github.com/ExtCore/ExtCore-Sample-FileStorage);
+* [ExtCore framework 7.0.0 sample web application that uses a database](https://github.com/ExtCore/ExtCore-Sample-Data);
+* [ExtCore framework 7.0.0 sample web application that uses Identity](https://github.com/ExtCore/ExtCore-Sample-Identity);
+* [ExtCore framework 7.0.0 sample web application with modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui);
+* [ExtCore framework 7.0.0 advanced sample web application with modular UI](https://github.com/ExtCore/ExtCore-Sample-Modular-Ui-Adv);
+* [ExtCore framework 7.0.0 advanced sample accounting web application](https://github.com/ExtCore/ExtCore-Sample-Accounting);
+* [ExtCore framework 7.0.0 sample web application that registers a service inside the extension](https://github.com/ExtCore/ExtCore-Sample-Service);
+* [ExtCore framework 7.0.0 sample web application that uses the events](https://github.com/ExtCore/ExtCore-Sample-Events);
+* [ExtCore framework 7.0.0 sample API web application](https://github.com/ExtCore/ExtCore-Sample-Api).
 
-You can also download our [ready to use full-featured sample](http://extcore.net/files/ExtCore-Sample-6.0.0.zip).
-It contains everything you need to run ExtCore-based web application from Visual Studio 2019, including SQLite
+You can also download our [ready to use full-featured sample](http://extcore.net/files/ExtCore-Sample-7.0.0.zip).
+It contains everything you need to run ExtCore-based web application from Visual Studio 2022, including SQLite
 database with the test data.
 
 ### Tutorials
@@ -57,5 +57,3 @@ Website: http://extcore.net/
 Docs: http://docs.extcore.net/
 
 Author: http://sikorsky.pro/
-
-Patreon: https://www.patreon.com/dmitry_sikorsky (you can support this project)
