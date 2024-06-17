@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <Authors>Dmitry Sikorsky</Authors>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="7.0.0" />
+    <PackageReference Include="ExtCore.Mvc.Infrastructure" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
